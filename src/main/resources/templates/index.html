@@ -1,0 +1,16 @@
+<!DOCTYPE html SYSTEM "https://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-3.dtd">
+<html
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:th="https://www.thymeleaf.org"
+>
+<body>
+<a href="fragen">Frage erstellen</a>
+Fragen:
+<div style="display: flex; flex-direction: column" th:each="frage: ${fragen}">
+    <div style="display: flex; flex-direction: row">
+        <div th:text="${frage.id}"/>
+        <div th:text="${frage.frageText}"/>
+    </div>
+</div>
+</body>
+</html>

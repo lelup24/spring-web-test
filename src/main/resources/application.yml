@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: Quiz
+
+
+  datasource:
+      url: jdbc:postgresql://localhost:8432/quiz_test
+      username: quiz
+      password: quiz
+      driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
